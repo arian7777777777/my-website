@@ -1,78 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa" dir="rtl">
 <head>
-    <title>arian website</title>
-    <style>
-        h1 {
-            text-align: center;
-            color: lightskyblue;
-            border: 50px solid;
-        }
-        h2 {
-            text-align: left;
-            color: darkblue;
-        }
-        h3 {
-            text-align: right;
-            color: darkblue;
-        }
-        img {
-            border-radius: 50%;
-        }
-        audio {
-            position: absolute;
-            top: 80%;
-            right: 20px;
-            transform: translateY(-100%);
-        }
-        .main-img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .img2 {
-            position: absolute;
-            right: 20px;
-            top: 750px;
-        }
-        .video2{
+<title>arian</title>
+<style>
+.menu{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+h1{
+    text-align: center;
+    color: #34afe3;
+    border: 2px solid;
+}
+.img1{
+    border-radius: 50%;
     position: absolute;
-    top: 130%;
-    left: 20px;
-
-
-
-        }
-
-
-        
-    </style>
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.search-box {
+    display: flex;
+}
+</style>
 </head>
 <body>
-    <h1>welcome to ariankmusic website</h1>
-    <h3>گمگشته در موسیقی</h3>
-    <h2>lost in music</h2>
-    <h3>آهنگ ها</h3>
-    <h2>musics</h2>
-    <h3>ویدیو ها</h3>
-    <h2>videos</h2>
-    <h3>عکس ها</h3>
-    <h2>photoes</h2>
-    <img class="main-img"
-         src="photo_2026-08-13_14-58-53.jpg"
-         width="300">
-    <video width="200"
-           controls
-           src="video_2026-08-06_07-06-36.mp4">
-    </video>
-    <audio controls>
-        <source src="remix.mp3" type="audio/mpeg">
-    </audio>
-    <img class="img2"
-         src="photo_2026-08-07_09-00-35.jpg"
-         width="200">
-         <video width="300" controls source src="video_2026-08-06_07-12-28.mp4" type="audio/mpeg" class="video2"></video>
-</body>
 
-</html>
+<h1>welcome to ariankmusic website</h1>
+
+<div class="header">
+    <div class="search-box">
+        <input type="text" placeholder="جستجو...">
+        <button>🔍</button>
+    </div>
+</div>
+
+<ul class="menu">
+    <a>خانه</a>
+    <a href="musics.html">آهنگ ها</a>
+    <li>درباره ی ما</li>
+    <a href="index2.html">ویدیو ها</a>
+</ul>
+
+<img class="img1" src="photo_2026-08-13_14-58-53.jpg" width="200"/>
+
+</body>
+</html
