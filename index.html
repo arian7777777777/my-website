@@ -33,6 +33,20 @@ h1{
 .search-box {
     display: flex;
 }
+body{
+    background-color: white;
+    color:black;
+}
+body.dark{
+    background-color: black;
+    color: white;
+}
+.themeBtn{
+    position: absolute;
+    text-align: left;
+    top: 10%;
+    left: 10%;
+}
 </style>
 </head>
 <body>
@@ -54,6 +68,12 @@ h1{
 </ul>
 
 <img class="img1" src="photo_2026-08-13_14-58-53.jpg" width="200"/>
-
+<button id="themeBtn" class="themeBtn">تغییر تم </button>
+<script>
+const btn=document.getElementById('themeBtn');
+console.log(btn);
+btn.addEventListener('click',function(){
+    document.body.classList.toggle('dark');});
+</script>
 </body>
 </html
