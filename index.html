@@ -1,79 +1,59 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
-<title>arian</title>
+    <meta charset="UTF-8">
+    <title>arian</title>
 <style>
-    body{
+.h11{
+    text-align: center;
 
-        background-color: rgb(187, 200, 201);
-    }
+}
+body{
+    background-color:blueviolet;
+    color:darkseagreen;
+}
 .menu{
     text-align: right;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-}
-h1{
-    text-align: center;
-    color: #34afe3;
-    border: 2px solid;
+    gap: 80px;
 }
 .img1{
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
+     position: absolute;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-40%,-50%);
 }
-.header {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-}
-.search-box {
-    display: flex;
-}
-body{
-    background-color: white;
-    color:black;
-}
-body.dark{
-    background-color: black;
-    color: white;
-}
-.themeBtn{
+.post-card{
+    margin-right: auto;
+    top: 20%;
     position: absolute;
-    text-align: left;
-    top: 10%;
-    left: 10%;
+}
+.post-card2{
+    margin-right: auto;
+    top: 70%;
+    position: absolute;
 }
 </style>
 </head>
 <body>
-
-<h1>welcome to ariankmusic website</h1>
-
-<div class="header">
-    <div class="search-box">
-        <input type="text" placeholder="جستجو...">
-        <button>🔍</button>
-    </div>
-</div>
-
+<h1 class="h11">welcome to arian weblog</h1>
 <ul class="menu">
-    <a style="display: block; width: fit-content ; border:2px solid;" اhref="index.html">خانه</a>
-    <a style="display: block; width: fit-content ; border:2px solid;" href="musics.html">آهنگ ها</a>
-    <a style="display: block; width: fit-content ; border:2px solid;" href="about.html">درباره ی ما<a>
-    <a  style="display: block; width: fit-content ; border:2px solid;" href="index2.html">ویدیو ها</a>
+<a style="color: darkseagreen;" href="">خانه</a>
+<a style="color: darkseagreen;" href="">یادداشت ها</a>
+<a style="color: darkseagreen;" href="">عکس ها</a>
+<a style="color: darkseagreen;" href="">ویدیو ها</a>
 </ul>
-
-<img class="img1" src="photo_2026-08-13_14-58-53.jpg" width="200"/>
-<button id="themeBtn" class="themeBtn">تغییر تم </button>
-<script>
-const btn=document.getElementById('themeBtn');
-console.log(btn);
-btn.addEventListener('click',function(){
-    document.body.classList.toggle('dark');});
-</script>
+<img class="img1" src="photo_2026-08-29_00-53-27.jpg" width="200"/>
+<div class="post-card">
+    <img style="border-radius: 15px;" src="photo_2026-08-13_14-58-53.jpg" width="200">
+    <h2>گمگشته در موسیقی</h2>
+    <p>من عاشق موسیقی و به ویژه ویولن زدن هستم</p>
+</div>
+<div class="post-card2">
+    <img style="border-radius: 15px;" src="c:\Users\StockLap\Desktop\web project\IMG_20250828_160620_508.webp" width="200" >
+    <h2>Violinist</h2>
+    <p>photo:Arian koochaki</p>
+</div>
 </body>
-</html
+</html>
