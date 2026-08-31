@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arian</title>
+<style>
+.h11{
+    text-align: center;
+
+}
+body{
+    background-color:blueviolet;
+    color:darkseagreen;
+}
+.menu{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.img1{
+     position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+}
+.post-card2{
+    margin-right: auto;
+    top: 70%;
+    position: absolute;
+}
+body.dark-mode{
+    background-color: black;
+    color: white;
+}
+#theme{
+    margin-right: auto;
+    top: 10%;
+    position: absolute;
+}
+</style>
+</head>
+<body>
+<h1 class="h11">welcome to arian weblog</h1>
+<ul class="menu">
+<a style="color: darkseagreen;" href="">خانه</a>
+<a style="color: darkseagreen;" href="">یادداشت ها</a>
+<a style="color: darkseagreen;" href="">عکس ها</a>
+<a style="color: darkseagreen;" href="">ویدیو ها</a>
+<a style="color: darkseagreen;" href="">آهنگ ها</a>
+</ul>
+<img class="img1" src="photo_2026-08-29_00-53-27.jpg" width="200"/>
+<div class="post-card2">
+    <img style="border-radius: 15px;" src="IMG_20260829_162333_634.jpg" width="200" >
+    <h2>Violinist</h2>
+    <p>photo:Arian koochaki</p>
+</div>
+<button id="theme">تغییر تم</button>
+<script>
+const themeButton=document.querySelector('#theme');
+const body=document.querySelector('body')
+themeButton.addEventListener('click',function(){
+body.classList.toggle('dark-mode');});
+</script>
+</body>
+</html>
