@@ -13,6 +13,17 @@ body{
     background-color:blueviolet;
     color:darkseagreen;
 }
+.header{
+    display:flex;
+    justify-content: center;
+    padding: 50px;
+    position:absolute;
+    top: 10%;
+}
+.search-box{
+    display: flex;
+}
+
 .menu{
     text-align: right;
     display: flex;
@@ -29,6 +40,12 @@ body{
     margin-right: auto;
     top: 70%;
     position: absolute;
+}
+.post-card3{
+    margin-right: auto;
+    top: 120%;
+    position: absolute;
+
 }
 body.dark-mode{
     background-color: black;
@@ -56,6 +73,11 @@ body.dark-mode{
     <h2>Violinist</h2>
     <p>photo:Arian koochaki</p>
 </div>
+<div class="post-card3">
+    <img src="photo_2026-06-11_11-15-58.jpg" width="200">
+    <h2>travel to a nostalgic and incredible world</h2>
+    <p>with some challenges!</p>
+</div>
 <button id="theme">تغییر تم</button>
 <script>
 const themeButton=document.querySelector('#theme');
@@ -63,5 +85,11 @@ const body=document.querySelector('body')
 themeButton.addEventListener('click',function(){
 body.classList.toggle('dark-mode');});
 </script>
+<div class="header">
+<div class="search-box">
+<input type="text" placeholder="...جستجو">
+<button>🔍</button>
+</div>
+</div>
 </body>
 </html>
