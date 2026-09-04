@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="fa" dir="rtl">
+    <title>arianweblog</title>
+<style>
+body.dark{
+    background-color: black;
+    color:darkseagreen;
+}
+
+.h11{
+    text-align: center;
+    color:darkseagreen;
+}
+body{
+    background-color: blueviolet;
+    color: darkseagreen;
+}
+.menu{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+.img1{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    top: -600px;
+}
+.search-box{
+    display: flex;
+
+}
+.post-card1{
+    margin-left: auto;
+    position: absolute;
+    top: 90%;
+}
+#themearian{
+   text-align: left;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%,-10%);
+}
+</style>
+</head>
+<body>
+    <h1 class="h11">welcome to arianweblog</h1>
+    <ul class="menu">
+        <li><button>☰</button></li>
+    <li><a style="color: darkseagreen;" href="">خانه</a></li>
+    <li><a style="color: darkseagreen;" href="notes.html">یادداشت ها</a></li>
+    <li><a style="color: darkseagreen;" href="">عکس ها</a></li>
+    <li><a style="color: darkseagreen;"  href="">ویدیو ها</a></li>
+    <li><a style="color: darkseagreen;" href="">آهنگ ها</a></li>
+    </ul>
+<img class="img1" src="photo_2026-08-29_00-53-27.jpg" width="200">
+<div class="header">
+<div class="search-box">
+<input type="text" placeholder="جستجو...">
+<button>🔍</button>
+</div>
+</div>
+<div class="post-card1">
+<img src="IMG_20260829_162333_634.jpg" width="200">
+<h2>violinist</h2>
+<p>photo:arian koochaki</p>
+</div>
+  <button id="themearian">تغییر تم</button>
+<script>
+const arian=document.getElementById('themearian');
+console.log('arian');
+arian.addEventListener('click', function(){
+document.body.classList.toggle('dark')
+});
+
+
+    </script>
+</body>
+</html>
